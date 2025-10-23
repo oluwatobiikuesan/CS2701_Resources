@@ -14,14 +14,31 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <ol>Home</ol>
+                <ol>Register</ol>
+                <ol>Login</ol>
+                <ol>Help</ol>
             </ul>
          </nav>
         <main>
             <!-- Check Week 4 Lecture to learn about HTML5 semantic elements-->
             <aside>
+            <input type="text" class="search" placeholder="Search">
             </aside>
             <section>
-                <form class="center" novalidate>
+                         <form class="center" novalidate>
+                            <label>Name</label>
+                            <input class="textInput" type="text" placeholder="Name">
+                            <br>
+                            <label>Email</label>
+                            <input class="textInput" type="text" placeholder="Email">
+                            <br>
+                            <label>Password</label>
+                            <input type="text" class="textInput" placeholder="Password">
+                            <br>
+                             <label>ReType Password</label>
+                            <input type="text" class="textInput" placeholder="ReType Password">
+                            <br>
                 <!-- ToDo: Implement the form containing 
                            Name - type text
                            email- type text
@@ -38,9 +55,18 @@
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
-
+                    <br/>
+                    <input type="checkbox" checked="false"/>
+                    <label>I agree to the <a href="#">Terms of Use</a> and <a>Privacy Policy</a></label>
+                    <br/>
+                    <br/>
+                    <div>
+                        <button class="primary-btn" name="Register" style="font-size: 16px">Register</button>
+                        <label><a  href="#">Learn more</a></label>
+                    </div>
                     <br><br>
                 </form>
+               
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
                 </div>
